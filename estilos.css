@@ -1,0 +1,1196 @@
+html {
+    scroll-behavior: smooth;
+}
+/* CONFIGURACION GENERAL */
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* --- FORZAR QUE LA FOTO DE FRENTE-TALLER SE VEA EN TODA LA PÁGINA --- */
+
+/* 1. Imagen de fondo en el body con sombra muy liviana para que se note la foto */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), 
+                url('imagenes/frente.jpeg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* 2. Barra superior semitransparente para ver el taller detrás del menú */
+header, .encabezado {
+    background-color: rgba(18, 20, 23, 0.5) !important;
+    backdrop-filter: blur(4px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* 3. QUITAR FONDOS NEGROS DE TODAS LAS SECCIONES */
+section, 
+.hero, 
+.hero-contenido, 
+.seccion-nosotros, 
+#nosotros, 
+.galeria-taller, 
+#servicios, 
+.contacto, 
+#contacto {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* MENU */
+
+header {
+    background-color: #080808;
+    padding: 15px 5%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff3333;
+    font-size: 23px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ff3333;
+}
+
+/* PORTADA */
+
+.portada {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #202020, #101820);
+}
+
+.subtitulo {
+    color: #ff3333;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.portada h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.portada p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 16px 28px;
+    background-color: #e52b2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #b91c1c;
+    transform: translateY(-3px);
+}
+
+/* SERVICIOS */
+
+.servicios {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.servicios h2,
+.nosotros h2,
+.horarios h2,
+.pagos h2,
+.contacto h2 {
+    color: #ff3333;
+    font-size: 32px;
+}
+f
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+   .contacto  
+    padding: 70px 20px;
+    text-align: center;
+
+
+.contacto .boton {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+}
+   
+.nosotros p {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* HORARIOS */
+
+.horarios {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.horario-contenido {
+    background-color: #222222;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+/* PAGOS */
+
+.pagos {
+    background-color: #191919;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contenedor-pagos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.pago {
+    background-color: #252525;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+
+.contacto .boton {
+    display: table;
+    margin: 25px auto 0;
+}
+
+.instagram {
+    background-color: #c13584;
+}
+
+.instagram:hover {
+    background-color: #96266a;
+}
+
+.telefonos {
+    margin-top: 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.telefonos a {
+    color: #ff5555;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 30px;
+    color: #aaaaaa;
+}
+
+footer h3 {
+    color: #ff3333;
+}
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 18px;
+    }
+
+    .portada {
+        padding: 80px 15px;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .portada p {
+        font-size: 16px;
+    }
+
+    .contenedor-servicios,
+    .contenedor-pagos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta,
+    .pago {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+/* --- Sección Contacto --- */
+.contacto {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.contacto h2 {
+    color: #ffcc00; /* Amarillo estilo taller */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.botones-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que en celulares se acomoden uno abajo del otro */
+}
+
+.btn-contacto {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 6px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-contacto:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Colores de marca */
+.btn-wa {
+    background-color: #25d366; /* Verde WhatsApp */
+}
+
+.btn-ig {
+    background-color: #E1306C; /* Rosa/Rojo Instagram */
+}
+.contacto {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.contacto h2 {
+    color: #ffcc00; /* Amarillo estilo taller */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.botones-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn-contacto {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 6px;
+    background-color: #333333; /* Color base oscuro */
+    border: 2px solid #ffcc00; /* Borde amarillo taller */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-contacto:hover {
+    transform: translateY(-3px);
+    background-color: #ffcc00;
+    color: #1a1a1a;
+}
+.galeria-taller {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.galeria-taller h2 {
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contenedor-multimedia {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.item-media {
+    background-color: #2b2b2b;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #444;
+}
+
+.item-media img, 
+.item-media video {
+    border-radius: 6px;
+    margin-top: 10px;
+}
+/* Forzar a que todas las imágenes de los servicios tengan el mismo tamaño */
+.item-media img {
+    width: 100%;
+    height: 380px; /* Ajusta esta altura si las quieres un poco más altas o más bajas */
+    object-fit: cover; /* Hace que la imagen llene el espacio sin deformarse */
+    border-radius: 6px;
+    display: block;
+}
+/* --- CAMBIO DE FONDO GENERAL --- */
+body {
+    background-color: #121417; /* Gris grafito oscuro muy elegante, no negro puro */
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* --- LOGO MECÁNICA CHAILLOU ENCABEZADO --- */
+.encabezado {
+    background-color: #1c1f24;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffcc00; /* Línea amarilla industrial */
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.logo h1 span {
+    color: #ffcc00; /* Destaca CHAILLOU en amarillo */
+}
+
+/* --- PORTADA CON MEJOR FONDO --- */
+.hero {
+    background: linear-gradient(135deg, #1f2329 0%, #121417 100%); /* Degradado gris taller */
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2a2e35;
+}
+
+.hero h2 {
+    color: #e63946; /* Rojo deportivo/mecánico */
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero .subtitulo {
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.hero .descripcion {
+    color: #b0b8c1;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+
+/* --- BOTÓN SOLICITAR TURNO GRANDE Y DESTACADO --- */
+.btn-solicitar-turno {
+    display: inline-block;
+    background-color: #25d366; /* Verde WhatsApp bien visible */
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 16px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #1ebd56;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); /* Sombra brillante */
+    transition: all 0.3s ease;
+}
+
+.btn-solicitar-turno:hover {
+    background-color: #1ebd56;
+    transform: translateY(-3px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+/* --- MENÚ DE NAVEGACIÓN CLARO Y VISIBLE --- */
+.encabezado {
+    background-color: #1c1f24;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.navegacion {
+    display: flex;
+    gap: 20px;
+}
+
+.navegacion a {
+    color: #ffffff; /* Texto blanco bien claro */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover {
+    color: #ffcc00; /* Se pone amarillo al pasar el mouse */
+}
+/* --- CENTRAR SECCIÓN SOBRE NOSOTROS --- */
+#nosotros, .seccion-nosotros {
+    text-align: center; /* Centra el título y párrafos */
+    padding: 50px 20px;
+}
+
+#nosotros h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nosotros p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- CENTRAR BOTONES DE CONTACTO E INSTAGRAM --- */
+.botones-contacto, .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el botón horizontalmente */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-instagram {
+    display: inline-block;
+    margin: 15px auto; /* Lo centra en pantalla */
+}
+/* --- CONTENEDOR DE CONTACTO CENTRADO --- */
+#contacto, .contacto, .botones-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente todos los elementos de contacto */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --- ESTILO Y CENTRADO DE BOTONES SOCIALES --- */
+.btn-contacto, .btn-instagram {
+    display: block;
+    margin: 15px auto; /* Centra automáticamente el botón en el medio */
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+/* --- PIE DE PÁGINA (FOOTER) AL FINAL --- */
+.pie-pagina {
+    background: transparent !important; /* Mantiene la foto del taller de fondo */
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-top: 2px solid #ffcc00; /* Línea amarilla industrial arriba del footer */
+}
+
+.footer-contenido h3 {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-contenido p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+/* --- CAMBIAR TODOS LOS ELEMENTOS ROJOS A AMARILLO --- */
+h2, 
+.hero h2, 
+.seccion-nosotros h2, 
+.galeria-taller h2, 
+.contacto h2, 
+p[style*="color: red"], 
+span[style*="color: red"],
+a[style*="color: red"],
+.numero,
+.contacto p,
+[class*="rojo"] {
+    color: #ffcc00 !important; /* Amarillo industrial brillante */
+}
+
+/* Forzar específicamente los títulos principales y números de teléfono a amarillo */
+.hero h2, 
+.galeria-taller h2, 
+.seccion-nosotros h2, 
+.contacto a[href^="tel:"],
+.contacto p {
+    color: #ff000d !important;
+}
+/* --- NOMBRES Y NÚMEROS DE TELÉFONO EN AMARILLO Y MÁS GRANDES --- */
+.contacto-telefonos, 
+.contacto p, 
+.contacto div {
+    color: #ffcc00 !important; /* Forza todo el bloque de texto de contacto a amarillo */
+    text-align: center;
+}
+
+/* Estilo para los nombres (Marcelo: y Alejo:) */
+.nombre-contacto, 
+.contacto p:nth-of-type(odd) {
+    color: #ffcc00 !important;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Estilo para los números de teléfono (Más grandes y legibles) */
+.numero-telefono, 
+.contacto a[href^="tel:"], 
+.contacto p:nth-of-type(even) {
+    color: #ffcc00 !important;
+    font-size: 1.6rem !important; /* Tamaño más grande */
+    font-weight: 800 !important;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse por arriba del número */
+.numero-telefono:hover, 
+.contacto a[href^="tel:"]:hover {
+    transform: scale(1.08);
+}
+/* --- BOTONES DE LLAMADA UNO ABAJO DEL OTRO --- */
+.botones-llamada-verticales {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center;    /* Los centra horizontalmente */
+    gap: 15px;              /* Espacio de separación entre un botón y otro */
+    margin-top: 20px;
+}
+
+/* Estilo para que los botones tengan buen tamaño y se vean prolijos */
+.btn-llamada {
+    display: inline-block;
+    background-color: rgba(28, 31, 36, 0.9);
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 280px;           /* Ancho fijo para que ambos botones sean iguales */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-llamada:hover {
+    background-color: #ffcc00;
+    color: #121417;
+    transform: scale(1.03);
+}
+/* --- LOGO MÁS CHICO EN LA SECCIÓN SOBRE NOSOTROS --- */
+.contenedor-logo-nosotros {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.logo-nosotros {
+    width: 170px;                  /* Tamaño más chico y discreto */
+    height: auto;
+    border-radius: 50%;            /* Forma circular */
+    border: 2px solid #ff0000;     /* Borde amarillo industrial más fino */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+}
+
+.logo-nosotros:hover {
+    transform: scale(1.05);        
+}
+/* --- GALERÍA DE FOTOS EN HORIZONTAL (CUADRÍCULA) --- */
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales en horizontal */
+    gap: 20px;                             /* Espacio de separación entre las fotos */
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Estilo para que cada foto se vea prolija, con bordes y efectos */
+.contenedor-imagenes img {
+    width: 100%;
+    height: 220px;                         /* Altura fija para que todas queden parejas */
+    object-fit: cover;                     /* Evita que la imagen se deforme */
+    border-radius: 8px;                    /* Bordes redondeados */
+    border: 2px solid #ff0000;             /* Borde amarillo industrial */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Pequeño zoom al pasar el mouse por encima de una foto */
+.contenedor-imagenes img:hover {
+    transform: scale(1.03);
+}
+
+/* Adaptable para celulares: si la pantalla es chica, pasan a mostrarse de a una o dos */
+@media (max-width: 768px) {
+    .contenedor-imagenes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-imagenes {
+        grid-template-columns: 1fr; /* 1 columna en celulares chicos */
+    }
+}
+/* --- GRILLA HORIZONTAL PARA LA GALERÍA Y VIDEO --- */
+.grilla-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales en horizontal */
+    gap: 25px;                             /* Espacio entre los recuadros */
+    max-width: 1350px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Estilo para cada tarjeta individual (.item-media) */
+.grilla-galeria .item-media {
+    background-color: rgba(18, 20, 23, 0.85); /* Fondo oscuro industrial */
+    border: 2px solid #ff0000;                 /* Borde amarillo */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Hacemos que el video o las fotos se adapten bien al recuadro */
+.grilla-galeria .item-media img,
+.grilla-galeria .item-media video {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Títulos pequeños dentro de cada tarjeta en amarillo */
+.grilla-galeria .item-media h3 {
+    color: #ff0015 !important;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Adaptable para celulares */
+@media (max-width: 900px) {
+    .grilla-galeria {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 600px) {
+    .grilla-galeria {
+        grid-template-columns: 1fr; /* 1 columna en celulares */
+    }
+}
+/* --- ESTILOS DEL FORMULARIO DE OPINIONES --- */
+.seccion-dejar-opinion {
+    background-color: rgba(18, 20, 23, 0.9);
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.seccion-dejar-opinion h2 {
+    color: #ff0011 !important;
+    margin-bottom: 10px;
+}
+
+.seccion-dejar-opinion p {
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.formulario-opinion {
+    text-align: left;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+.campo-form label {
+    display: block;
+    color: #ffcc00;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.campo-form input,
+.campo-form select,
+.campo-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #121417;
+    border: 1px solid #ffcc00;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.campo-form input:focus,
+.campo-form select:focus,
+.campo-form textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Botón de enviar */
+.btn-enviar-opinion {
+    display: block;
+    width: 100%;
+    background-color: #ff0000;
+    color: #121417;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.btn-enviar-opinion:hover {
+    background-color: #e6b800;
+    transform: scale(1.02);
+}
+/* --- ESTILOS DEL PIE DE PÁGINA --- */
+.pie-de-pagina {
+    background-color: #0d0e10;
+    border-top: 2px solid #ffcc00;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+.pie-de-pagina h3 {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.pie-de-pagina p {
+    color: #cccccc;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.pie-de-pagina .copyright {
+    color: #888888;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+/* --- AGRANDAR TEXTOS DE LA PÁGINA --- */
+
+/* 1. Botón / Enlace de Solicitar Turno (arriba) */
+.btn-turno, .navegacion a.btn-turno {
+    font-size: 1.3rem !important; /* Letra más grande y destacada */
+    padding: 10px 20px;
+}
+
+/* 2. Portada (Hero): "Tu vehículo en buenas manos" */
+.hero h1, .seccion-inicio h1 {
+    font-size: 3.2rem !important; /* Letra principal gigante y llamativa */
+}
+
+/* 3. Subtítulo de la portada: "Atención personalizada y soluciones..." */
+.hero p, .seccion-inicio p {
+    font-size: 1.4rem !important; /* Letra más legible y grande */
+}
+
+/* 4. Títulos de secciones: "Nuestros Servicios" y "Sobre Nosotros" */
+section h2 {
+    font-size: 2.6rem !important; /* Títulos principales más grandes */
+}
+
+/* 5. Descripciones y textos dentro de "Sobre Nosotros" */
+#nosotros p, .seccion-nosotros p {
+    font-size: 1.25rem !important; /* Texto más cómodo y grande de leer */
+    line-height: 1.6;
+}
+
+/* 6. Textos y detalles de "Nuestros Servicios" */
+.grilla-servicios p, .item-servicio p, .seccion-servicios p {
+    font-size: 1.15rem !important;
+}
+
+/* 7. Horarios de atención y números */
+.horarios, .seccion-horarios, .horarios-taller {
+    font-size: 1.25rem !important;
+}
+
+.horarios h3, .seccion-horarios h3 {
+    font-size: 1.8rem !important;
+    color: #ffcc00;
+}
+/* --- CORRECCIONES FINALES DE COLOR EN EL ENCABEZADO Y TÍTULOS --- */
+
+/* 1. Título principal superior: Mecánica en blanco y Chaillou en rojo */
+header h1 span, .logo span {
+    color: #ff3333 !important; /* Chaillou en rojo */
+}
+header h1, .logo {
+    color: #ffffff !important; /* Mecánica en blanco */
+}
+
+/* 2. "Mecánica General - Tolosa" en rojo */
+.hero h1, .seccion-inicio h1 {
+    color: #f7f7f7 !important;
+}
+
+/* 3. Textos descriptivos de la portada en blanco */
+.hero p, .seccion-inicio p {
+    color: #ffffff !important;
+}
+/* --- CAMBIAR TODO LO QUE QUEDA EN AMARILLO A ROJO --- */
+
+/* 1. Títulos de secciones, subtítulos y textos generales */
+h1, h2, h3, h4, h5, h6, 
+p, span, a, 
+.estrellas-puntuacion,
+.seccion-dejar-opinion h2,
+.seccion-dejar-opinion p,
+.pie-de-pagina h3,
+.pie-de-pagina p,
+.campo-form label {
+    color: #ff3333 !important;
+}
+
+/* 2. Asegurar títulos específicos y elementos interactivos */
+.hero h1, .seccion-inicio h1,
+#nosotros h2, #servicios h2, #contacto h2, #opiniones h2,
+.seccion-mapa h2, .seccion-horarios h3,
+.grilla-galeria .item-media h3,
+.seccion-dejar-opinion h2 {
+    color: #ff3333 !important;
+}
+
+/* 3. Mantener el título principal con "Mecánica" en blanco y "Chaillou" en rojo */
+header h1, .logo {
+    color: #ffffff !important;
+}
+header h1 span, .logo span {
+    color: #e60d0d !important;
+}
+/* --- PASAR TODOS LOS TEXTOS SECUNDARIOS A BLANCO --- */
+
+/* 1. Subtítulos y descripciones generales en blanco */
+.hero p, 
+.seccion-inicio p,
+.seccion-servicios p,
+#servicios p,
+#nosotros p,
+.seccion-nosotros p,
+.seccion-horarios p,
+.horarios p,
+.seccion-contacto p,
+.seccion-mapa p,
+.seccion-dejar-opinion p,
+.pie-de-pagina p {
+    color: #ffffff !important;
+}
+
+/* 2. Textos específicos dentro de los servicios, horarios, pagos y formularios en blanco */
+.grilla-servicios p,
+.item-servicio p,
+.horarios li,
+.horarios div,
+.metodo-pago p,
+.campo-form label,
+.campo-form input,
+.campo-form textarea,
+.seccion-dejar-opinion label,
+.seccion-dejar-opinion span {
+    color: #ffffff !important;
+}
+
+/* 3. Botones (Texto interno en blanco y bordes rojos) */
+.btn-turno, 
+.btn-enviar-opinion,
+.btn-contacto,
+a.btn-turno {
+    color: #ffffff !important;
+    border-color: #ff3333 !important;
+}
+/* --- CORRECCIONES FINALES A COLOR BLANCO --- */
+
+/* 1. Recuadros de Efectivo y Transferencia (títulos y descripciones en blanco) */
+.metodo-pago h3, .metodo-pago p,
+.caja-pago h3, .caja-pago p,
+.seccion-pagos h3, .seccion-pagos p {
+    color: #ffffff !important;
+}
+
+/* 2. Botón "Solicitar Turno" (fondo blanco, texto negro o rojo según prefieras, o ajustado) */
+.btn-turno, a.btn-turno {
+    background-color: #ffffff !important;
+    color: #ff3333 !important; /* Texto en rojo sobre fondo blanco para que resalte */
+}
+
+/* 3. Frase: "Tocá cualquiera de los números para llamarnos directamente" en blanco */
+.seccion-contacto p, 
+#contacto p,
+.subtitulo-contacto {
+    color: #ffffff !important;
+}
+
+/* 4. Subtítulo: "Un vistazo a lo que hacemos en Mecánica Chaillou" en blanco */
+.seccion-galeria p,
+#servicios + p,
+.subtitulo-galeria {
+    color: #ffffff !important;
+}
+/* --- ÚLTIMOS DETALLES EN BLANCO --- */
+
+/* 1. Menú de navegación superior (Inicio, Servicios, Nosotros, Contacto, Opiniones) en blanco */
+nav a, 
+.navegacion a,
+header nav a {
+    color: #ffffff !important;
+}
+
+/* 2. Título "Solicitá tu turno" (el que quedó en rojo abajo) en blanco */
+.seccion-turno h2, 
+#turno h2,
+section#contacto h2 + p + div h2,
+.seccion-contacto h2 {
+    color: #ffffff !important;
+}
+
+/* Si "Solicitá tu turno" es un h2 general de esa sección, usamos esta regla directa: */
+.seccion-contacto h2, 
+.seccion-turno h2 {
+    color: #ffffff !important;
+}
+
+/* 3. Textos dentro de los recuadros de Efectivo y Transferencia en blanco */
+.metodo-pago h3, 
+.metodo-pago p,
+.caja-pago h3, 
+.caja-pago p,
+.pago h3, 
+.pago p {
+    color: #ffffff !important;
+}
+/* --- PONER EL TEXTO DE SOLICITAR TURNO EN BLANCO --- */
+.btn-turno, 
+a.btn-turno,
+button.btn-turno {
+    color: #ffffff !important;
+}
+/* --- FORZAR TEXTO DE SOLICITAR TURNO A BLANCO Y BORDES A ROJO --- */
+
+/* 1. Texto de Solicitar Turno en blanco dentro del botón verde */
+.btn-turno, 
+a.btn-turno,
+button.btn-turno {
+    color: #ffffff !important;
+}
+
+/* 2. Todos los bordes y líneas divisorias de la página en rojo */
+*, 
+.grilla-galeria .item-media, 
+.seccion-dejar-opinion, 
+.tarjeta-testimonio,
+.pie-de-pagina,
+header,
+.campo-form input,
+.campo-form select,
+.campo-form textarea,
+.contenedor-mapa {
+    border-color: #df0d0d !important;
+}
+
+/* Línea superior del pie de página en rojo */
+.pie-de-pagina {
+    border-top: 2px solid #c80707 !important;
+}
+/* --- SACAR LA LÍNEA ROJA ABAJO DE SOLICITAR TURNO --- */
+.hero, 
+.seccion-inicio,
+header, 
+.encabezado {
+    border-bottom: none !important;
+}
+/* --- PONER LOS BOTONES DE LLAMADA EN BLANCO --- */
+.btn-contacto h3, 
+.btn-contacto p, 
+.caja-contacto h3, 
+.caja-contacto p,
+.contacto a h3,
+.contacto span,
+a[href^="tel"] h3,
+a[href^="tel"] p {
+    color: #ffffff !important;
+}
+/* --- FORZAR TEXTO DE LLAMAR A ALEJO Y MARCELO A BLANCO --- */
+.seccion-contacto a h3,
+.seccion-contacto a p,
+.caja-contacto h3,
+.caja-contacto p,
+a[href^="tel"] h3,
+a[href^="tel"] p,
+a[href^="tel"] span,
+.btn-contacto * {
+    color: #ffffff !important;
+}
+/* --- SOLUCIÓN DEFINITIVA PARA EL TEXTO DEL BOTÓN --- */
+body a.btn-turno, 
+.hero a.btn-turno, 
+a.btn-turno {
+    color: #ffffff !important;
+}
+/* --- CORRECCIÓN DEFINITIVA DE COLORES (BOTÓN Y TELÉFONOS) --- */
+
+/* 1. Forzar texto del botón "SOLICITAR TURNO" a blanco */
+a.btn-solicitar-turno, 
+.btn-solicitar-turno, 
+.btn-turno, 
+a.btn-turno {
+    color: #ffffff !important;
+}
+
+/* 2. Forzar los textos de "Llamar a Alejo" y "Llamar a Marcelo" a blanco */
+.btn-contacto h3, 
+.btn-contacto p, 
+.seccion-contacto a h3, 
+.seccion-contacto a p,
+a[href^="tel"] h3,
+a[href^="tel"] p {
+    color: #ffffff !important;
+}
+/* --- CORRECCIÓN DEFINITIVA PARA LLAMAR A ALEJO Y MARCELO EN BLANCO --- */
+.seccion-contacto .btn-contacto h3,
+.seccion-contacto .btn-contacto p,
+.caja-contacto h3,
+.caja-contacto p,
+a[href^="tel"] h3,
+a[href^="tel"] p,
+a[href^="tel"] span {
+    color: #ffffff !important;
+}
+/* --- FORZAR LLAMAR A ALEJO Y MARCELO A BLANCO --- */
+.seccion-contacto a.btn-contacto,
+.seccion-contacto a.btn-contacto h3,
+.seccion-contacto a.btn-contacto span,
+.seccion-contacto a.btn-contacto p,
+.caja-contacto h3,
+.caja-contacto span,
+a[href^="tel"] h3,
+a[href^="tel"] span {
+    color: #ffffff !important;
+}
